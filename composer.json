@@ -1,0 +1,29 @@
+{
+    "name": "klongchu/omise",
+    "description": "this is a packge of omise",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "klongchu",
+            "email": "klongchu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : "^8.0",
+        "guzzlehttp/guzzle": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "klongchu\\Omise\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "klongchu\\Omise\\OmiseServiceProvider"
+            ]
+        }
+    }
+}
